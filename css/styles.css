@@ -488,6 +488,7 @@ h4 {
         justify-content: space-between;
     }
 }
+
 /* Soporte al cliente **/
 .site-header.soporte {
     position: relative;
@@ -536,4 +537,60 @@ h4 {
 .contenedor-soporte p a {
     text-decoration: none;
     color: #2a2353;
+}
+
+/* Clientes **/
+.site-header.clientes {
+    position: relative;
+    background-image: url(../img/nuestros-clientes.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.site-header.clientes .overlay {
+    opacity: 0.4;
+}
+.site-header.clientes .contenido-header-clientes {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 5001;
+}
+.site-header.clientes .contenido-header-clientes .bloque {
+    margin-top: 2rem;
+}
+.site-header.clientes .contenido-header-clientes .bloque h1 {
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+.contenedor-clientes {
+    height: 48vh;
+    min-height: 272px;
+    max-width: 81rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2a2353;
+    line-height: 1.5;
+}
+.contenedor-clientes p:first-child {
+    margin-top: 0;
+}
+.contenedor-clientes p a {
+    text-decoration: none;
+    color: #2a2353;
+}
+.site-nuestros-clientes.clientes {
+    min-height: 55vh;
 }
