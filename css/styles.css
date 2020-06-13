@@ -530,3 +530,10 @@ h4 {
     color: #2a2353;
     line-height: 1.5;
 }
+.contenedor-soporte p:first-child {
+    margin-top: 0;
+}
+.contenedor-soporte p a {
+    text-decoration: none;
+    color: #2a2353;
+}
