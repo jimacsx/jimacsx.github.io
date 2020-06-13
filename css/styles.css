@@ -87,7 +87,7 @@ h4 {
 /* Header */
 .site-header {
     background-color: #333333;
-    padding: 0 0 3rem 0;
+    padding: 0 0 0 0;
 }
 .site-header.inicio {
     position: relative;
@@ -303,12 +303,12 @@ h4 {
     flex-direction: column;
     justify-content: center;
 }
-.contenedor-soporte {
+.contenedor-home-soporte {
     display: flex;
     justify-content: flex-start;
 }
 @media (min-width: 768px) {
-    .contenedor-soporte {
+    .contenedor-home-soporte {
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
@@ -422,7 +422,7 @@ h4 {
 /* Nosotros **/
 .site-header.nosotros {
     position: relative;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/nosotros.jpg);
     background-position: center center;
     background-size: cover;
     height: 40vh;
@@ -487,4 +487,46 @@ h4 {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+/* Soporte al cliente **/
+.site-header.soporte {
+    position: relative;
+    background-image: url(../img/soporte.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.site-header.soporte .contenido-header-soporte {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 5001;
+}
+.site-header.soporte .contenido-header-soporte .bloque {
+    margin-top: 2rem;
+}
+.site-header.soporte .contenido-header-soporte .bloque h1 {
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+.contenedor-soporte {
+    height: 48vh;
+    min-height: 272px;
+    max-width: 81rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2a2353;
+    line-height: 1.5;
 }
