@@ -594,3 +594,51 @@ h4 {
 .site-nuestros-clientes.clientes {
     min-height: 55vh;
 }
+
+/* Clientes **/
+.site-header.soluciones {
+    position: relative;
+    background-image: url(../img/soluciones.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.site-header.soluciones .overlay {
+    opacity: 0.4;
+}
+.site-header.soluciones .contenido-header-soluciones {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 5001;
+}
+.site-header.soluciones .contenido-header-soluciones .bloque {
+    margin-top: 2rem;
+}
+.site-header.soluciones .contenido-header-soluciones .bloque h1 {
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+.contenedor-soluciones {
+    height: 48vh;
+    min-height: 272px;
+    max-width: 81rem;
+    margin: 10rem auto 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #2a2353;
+    line-height: 1.5;
+}
+.contenedor-soluciones p:first-child {
+    margin-top: 0;
+}
