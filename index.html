@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <!-- Header del sitio -->
     <header class="site-header inicio">
         <!-- Barra de Navegación -->
-        <div class="barra">
-            <a href="/" class="link-logo">
-                <img src="img/logo_proinfo.png" alt="Logotipo de Proinfo" class="logo">
+        <nav class="site-nav">
+            <a href="/" class="logo">
+                <img src="img/logo_proinfo.png" alt="Logotipo de Proinfo" class="logo-img">
             </a>
-            <div class="mobile-menu">
-                <a href="#" class="link-menu">
-                    <img src="img/barras.svg" alt="Icono Menu">
-                </a>
+
+            <div class="menu-toggle">
+              <div class="hamburger"></div>
             </div>
-            <nav id="navegacion" class="navegacion">
-                <a href="soluciones.html">SOLUCIONES</a>
-                <a href="soporte.html">SOPORTE</a>
-                <a href="clientes.html">CLIENTES</a>
-                <a href="nosotros.html">NOSOTROS</a>
-                <div class="vertical-divider"></div>
-                <a href="https://mbox.s425.sureserver.com/?domain=proinfo.com.mx&" target="_blank">CORREO PROINFO</a>
-            </nav>
-        </div>
+
+            <ul class="open desktop">
+                <li><a href="soluciones.html"><i class="fa fa-database site-nav--icon"></i>SOLUCIONES</a></li>
+                <li><a href="soporte.html"><i class="fa fa-info-circle site-nav--icon"></i>SOPORTE</a></li>
+                <li><a href="clientes.html"><i class="fa fa-paper-plane site-nav--icon"></i>CLIENTES</a></li>
+                <li><a href="nosotros.html"><i class="fa fa-cloud-download site-nav--icon"></i>NOSOTROS</a></li>
+                <li class="li-vertical-divider"><div class="vertical-divider"></div></li>
+                <li><a href="https://mbox.s425.sureserver.com/?domain=proinfo.com.mx&" target="_blank"><i class="fa fa-envelope site-nav--icon"></i>CORREO PROINFO</a></>
+            </ul>
+        </nav>
         <!-- Contenido del Header -->
         <div class="contenedor contenido-header">
             <h1>PROCESOS DE INTEGRACI&Oacute;N INFORM&Aacute;TICA</h1>
@@ -67,7 +70,7 @@
     <!-- Final de la seccion principal del sitio -->
     <!-- Seccion soluciones -->
     <section class="site-soluciones">
-        <div class="contenedor contenedor-soluciones">
+        <div class="contenedor contenedor-home-soluciones">
             <div class="bloque-informacion-home">
                 <div class="arriba">
                     <h2>SOLUCIONES</h2>

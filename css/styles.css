@@ -130,81 +130,10 @@ h4 {
     line-height: 1.5;
     margin: 0;
 }
-.barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 0 2rem;
-    min-height: 50px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 5002;
-}
-.barra .link-logo {
-    display: flex;
-    align-items: center;
-}
-.barra .logo {
-    width: 120px;
-}
-/** Navegacion **/
-.navegacion a {
-    color: #2a2353;
-    text-decoration: none;
-    font-size: 1.6rem;
-    display: block;
-}
-.navegacion a:hover {
-    color: #e0cb22;
-}
-.navegacion .vertical-divider {
-    display: inline-block;
-    border: solid 1px #2a2353;
-    height: 40px;
-    margin-right: 3rem;
-}
-/** Mobile Menu **/
-.mobile-menu  .link-menu {
-    display: flex;
-    align-items: center;
-}
-.mobile-menu img {
-    width: 3rem;
-}
-.navegacion:target {
-    display: block;
-}
-.navegacion {
-    display: none;
-}
-@media (min-width: 1024px) {
-    .mobile-menu {
-        display: none;
-    }
-    .navegacion {
-        display: flex;
-        align-items: center;
-    }
-}
+
 @media (min-width: 768px) {
     .contenido-header {
         text-align: left;
-    }
-    .barra {
-        min-height: 64px;
-    }
-    .barra .logo {
-        width: 150px;
-    }
-    .navegacion a {
-        display: inline-block;
-        font-size: 1.4rem;
-        margin-right: 3rem;
-    }
-    .navegacion a:last-of-type {
-        margin: 0;
     }
 }
 
@@ -279,12 +208,12 @@ h4 {
     flex-direction: column;
     justify-content: center;
 }
-.contenedor-soluciones {
+.contenedor-home-soluciones {
     display: flex;
     justify-content: flex-end;
 }
 @media (min-width: 768px) {
-    .contenedor-soluciones {
+    .contenedor-home-soluciones {
         justify-content: flex-end;
         align-items: center;
         flex-wrap: wrap;
@@ -531,12 +460,18 @@ h4 {
     color: #2a2353;
     line-height: 1.5;
 }
+.contenedor-soporte p {
+    font-size: 1.8rem;
+}
 .contenedor-soporte p:first-child {
     margin-top: 0;
 }
 .contenedor-soporte p a {
     text-decoration: none;
     color: #2a2353;
+}
+.contenedor-soporte p a:hover {
+    color: #e0cb22;
 }
 
 /* Clientes **/
