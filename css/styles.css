@@ -77,11 +77,11 @@ h4 {
 }
 .boton-verde {
     background-color: #e0cb22;
-    color: #ffffff;
+    color: #2a2353;
 }
 .boton-verde:hover {
     background-color: #b9ab37;
-    color: #2a2353;
+    color: #ffffff;
 }
 
 /* Header */
@@ -123,6 +123,7 @@ h4 {
     color: #ffffff;
     max-width: 80rem;
     line-height: 1;
+    font-weight: 900;
 }
 .contenido-header p {
     color: #ffffff;
@@ -180,7 +181,9 @@ h4 {
     text-align: center;
 }
 .bloque-informacion-home .arriba h2 {
-    margin: 0;
+    line-height: normal;
+    text-align: left;
+    margin: 0 0 0 1em;
 }
 .bloque-informacion-home .arriba img {
     width: 300px;
@@ -304,6 +307,51 @@ h4 {
     .contenedor-nuestros-clientes .clientes .cliente {
         flex-direction: column;
     }
+}
+
+/*** Seccion contactanos **/
+.site-contactanos {
+    background-color: #2a2353;
+    position: relative;
+    min-height: 45vh;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site-contactanos .contenedor {
+    color: #ffffff;
+}
+.site-contactanos .contenedor .bloque-arriba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.site-contactanos .contenedor .bloque-arriba h3 {
+    margin: 0;
+}
+.site-contactanos .contenedor .bloque-abajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.site-contactanos .contenedor .bloque-abajo p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: .5em 0;
+}
+.site-contactanos .contenedor .bloque-abajo p .bold {
+    font-weight: 700;
+}
+.site-contactanos .contenedor .bloque-abajo p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.site-contactanos .contenedor .bloque-abajo p a:hover {
+    text-decoration: none;
+    color: #e0cb22;
 }
 
 /** Footer **/
