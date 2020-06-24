@@ -135,7 +135,7 @@ a:after {
 }
 .contenido-header p {
     color: #ffffff;
-    max-width: 510px;
+    max-width: 505px;
     line-height: 1.5;
     margin: 0;
     font-weight: 300;
@@ -230,7 +230,7 @@ a:after {
 /** Seccion soluciones **/
 .site-soluciones {
     position: relative;
-    background-image: url(../img/soluciones-home.jpg);
+    background-image: url(../img/soluciones-home.png);
     background-size: cover;
     height: 100vh;
     min-height: 50rem;
@@ -244,9 +244,10 @@ a:after {
 }
 @media (min-width: 768px) {
     .site-soluciones {
-        background-image: url(../img/soluciones-home.jpg);
+        background-image: url(../img/soluciones-home.png);
         background-position: center center;
         background-size: cover;
+        min-height: 768px;
     }
     .contenedor-home-soluciones {
         justify-content: flex-end;
@@ -258,7 +259,7 @@ a:after {
 /** Seccion soporte **/
 .site-soporte {
     position: relative;
-    background-image: url(../img/soporte-home.jpg);
+    background-image: url(../img/soporte-home.png);
     background-position: center right;
     background-size: cover;
     height: 100vh;
@@ -273,9 +274,10 @@ a:after {
 }
 @media (min-width: 768px) {
     .site-soporte {
-        background-image: url(../img/soporte-home.jpg);
+        background-image: url(../img/soporte-home.png);
         background-position: center center;
         background-size: cover;
+        min-height: 768px;
     }
     .contenedor-home-soporte {
         justify-content: flex-start;
@@ -311,7 +313,7 @@ a:after {
     font-weight: 900;
 }
 .contenedor-nuestros-clientes .bloque-arriba .barra-con-circulos {
-    width: 340px;
+    width: 400px;
 }
 .contenedor-nuestros-clientes .clientes {
     width: 100%;
@@ -320,13 +322,25 @@ a:after {
     justify-content: center;
 }
 .contenedor-nuestros-clientes .clientes:last-child {
-    margin-bottom: 5rem;
+    margin-bottom: 5em;
 }
 .contenedor-nuestros-clientes .clientes .cliente {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 2rem;
+    margin: 1em;
+}
+.contenedor-nuestros-clientes .clientes .cliente .logo-cliente {
+    width: 180px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-pemex {
+    width: 150px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-infonavit {
+    width: 120px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-att {
+    width: 120px;
 }
 @media (min-width: 768px) {
     .contenedor-nuestros-clientes {
@@ -339,7 +353,7 @@ a:after {
     .contenedor-nuestros-clientes .clientes {
         flex-direction: row;
         justify-content: space-around;
-        margin: 3rem 0;
+        margin: 0;
     }
     .contenedor-nuestros-clientes .clientes .cliente {
         flex-direction: column;
@@ -370,7 +384,7 @@ a:after {
     font-weight: 900;
 }
 .site-contactanos .contenedor .bloque-arriba .barra-con-circulos {
-    width: 300px;
+    width: 380px;
 }
 .site-contactanos .contenedor .bloque-abajo {
     display: flex;
@@ -475,7 +489,7 @@ a:after {
     width: 320px;
 }
 .contenedor-nosotros {
-    max-width: 81rem;
+    max-width: 744px;
     margin: 6rem auto;
     display: flex;
     flex-direction: column;
@@ -682,7 +696,7 @@ a:after {
 .contenedor-soluciones {
     height: 48vh;
     min-height: 272px;
-    max-width: 81rem;
+    max-width: 744px;
     margin: 10rem auto 6rem;
     display: flex;
     flex-direction: column;
