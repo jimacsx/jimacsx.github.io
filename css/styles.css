@@ -22,7 +22,7 @@ img {
     margin: 0 auto;
 }
 h1 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
 }
 h2 {
     font-size: 3.0rem;
@@ -135,9 +135,10 @@ a:after {
 }
 .contenido-header p {
     color: #ffffff;
-    max-width: 51rem;
+    max-width: 510px;
     line-height: 1.5;
     margin: 0;
+    font-weight: 300;
 }
 .contenido-header .flecha {
     position: absolute;
@@ -209,6 +210,7 @@ a:after {
 }
 .bloque-informacion-home .abajo p {
     line-height: 1.5;
+    font-weight: 300;
     margin: 0;
 }
 .bloque-informacion-home .contenedor-boton {
@@ -306,7 +308,7 @@ a:after {
     line-height: 1.25;
 }
 .contenedor-nuestros-clientes .bloque-arriba h2 .bold {
-    font-weight: 700;
+    font-weight: 900;
 }
 .contenedor-nuestros-clientes .bloque-arriba .barra-con-circulos {
     width: 340px;
@@ -365,6 +367,7 @@ a:after {
 }
 .site-contactanos .contenedor .bloque-arriba h3 {
     margin: 0;
+    font-weight: 900;
 }
 .site-contactanos .contenedor .bloque-arriba .barra-con-circulos {
     width: 300px;
@@ -466,6 +469,7 @@ a:after {
     color: #ffffff;
     margin: 0;
     line-height: 1;
+    font-weight: 900;
 }
 .site-header.nosotros .contenido-header-nosotros .bloque .barra-con-circulos {
     width: 320px;
@@ -481,6 +485,7 @@ a:after {
 }
 .contenedor-nosotros p {
     width: 100%;
+    font-weight: 300;
 }
 .contenedor-nosotros .bloque {
     width: 100%;
@@ -539,6 +544,7 @@ a:after {
     color: #ffffff;
     margin: 0;
     line-height: 1;
+    font-weight: 900;
 }
 .site-header.soporte .contenido-header-soporte .bloque .barra-con-circulos {
     width: 280px;
@@ -558,6 +564,10 @@ a:after {
 }
 .contenedor-soporte p {
     font-size: 1.8rem;
+    font-weight: 300;
+}
+.contenedor-soporte p .bold {
+    font-weight: 700;
 }
 .contenedor-soporte p:first-child {
     margin-top: 0;
@@ -604,7 +614,7 @@ a:after {
     font-weight: 300;
 }
 .site-header.clientes .contenido-header-clientes .bloque h1 .bold {
-    font-weight: 700;
+    font-weight: 900;
 }
 .site-header.clientes .contenido-header-clientes .bloque .barra-con-circulos {
     width: 400px;
@@ -664,6 +674,7 @@ a:after {
     color: #ffffff;
     margin: 0;
     line-height: 1;
+    font-weight: 900;
 }
 .site-header.soluciones .contenido-header-soluciones .bloque .barra-con-circulos {
     width: 300px;
@@ -679,6 +690,9 @@ a:after {
     justify-content: flex-start;
     color: #2a2353;
     line-height: 1.5;
+}
+.contenedor-soluciones p {
+    font-weight: 300;
 }
 .contenedor-soluciones p:first-child {
     margin-top: 0;
