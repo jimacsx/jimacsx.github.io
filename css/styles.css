@@ -102,7 +102,7 @@ a:after {
     background-image: url(../img/header.jpg);
     background-position: center center;
     background-size: cover;
-    height: 80vh;
+    height: 75vh;
     min-height: 40rem;
     display: flex;
     flex-direction: column;
@@ -161,16 +161,20 @@ a:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.objetivo h3 {
+.objetivo .objetivo-img {
+    width: 80px;
+}
+.objetivo h4 {
     text-transform: uppercase;
-    margin: 2rem 0;
+    margin: 1rem 0;
     color: #2a2353;
 }
 @media (min-width: 768px) {
     .seccion-ofrecemos {
-        height: 20vh;
-        min-height: 9em;
+        height: 25vh;
+        min-height: 200px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -182,6 +186,9 @@ a:after {
     }
     .objetivo {
         flex-basis: calc(33.3% - 1rem);
+    }
+    .objetivo .objetivo-img {
+        width: 100px;
     }
     .objetivo h4 {
         text-transform: uppercase;
@@ -319,33 +326,109 @@ a:after {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .contenedor-nuestros-clientes .clientes:last-child {
     margin-bottom: 5em;
 }
-.contenedor-nuestros-clientes .clientes .cliente {
+/* .contenedor-nuestros-clientes .clientes .cliente {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 1em;
-}
-.contenedor-nuestros-clientes .clientes .cliente .logo-cliente {
+} */
+.contenedor-nuestros-clientes .clientes .cliente {
+    margin: 1em;
     width: 180px;
 }
-.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-pemex {
-    width: 150px;
+.contenedor-nuestros-clientes .clientes .cliente .walmart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
 }
-.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-infonavit {
-    width: 120px;
+.contenedor-nuestros-clientes .clientes .cliente .totalplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
 }
-.contenedor-nuestros-clientes .clientes .cliente .logo-cliente-att {
-    width: 120px;
+.contenedor-nuestros-clientes .clientes .cliente .santander {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .money {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .inbursa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .sanborns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .izzi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .moctezuma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .banorte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .pemex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .infonavit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .att {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+.contenedor-nuestros-clientes .clientes .cliente .kionetworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
 }
 @media (min-width: 768px) {
     .contenedor-nuestros-clientes {
         align-items: center;
         flex-wrap: wrap;
+    }
+    .contenedor-nuestros-clientes .bloque-arriba {
+        margin-bottom: 2em;
     }
     .contenedor-nuestros-clientes .bloque-arriba img {
         width: 500px;

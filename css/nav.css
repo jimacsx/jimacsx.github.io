@@ -13,7 +13,7 @@
     height: 62px;
 }
 .logo .logo-img {
-    width: 120px;
+    width: 150px;
 }
 
 .menu-toggle {
@@ -148,12 +148,15 @@ nav .correo-link a {
     
     .logo {
         height: 68px;
-        max-width: 150px;
+        max-width: 210px;
     }
     .logo .logo-img {
-        width: 150px;
+        width: 210px;
     }
-
+    nav .logo {
+        padding: 0;
+        max-width: 210px;
+    }
     nav {
         display: flex;
         flex-direction: row;
