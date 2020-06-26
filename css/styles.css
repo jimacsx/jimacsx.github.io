@@ -847,6 +847,10 @@ a:after {
 .contenedor-soluciones .soluciones .tabcontent .subtitulo {
     margin: 0;
 }
+.contenedor-soluciones .soluciones .tab .tablinks {
+    width: 150px;
+    min-height: 95px;
+}
 .contenedor-soluciones .soluciones .tab .tablinks img {
     filter: grayscale(100%);
 }
