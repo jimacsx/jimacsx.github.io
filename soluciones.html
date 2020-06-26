@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="css/nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function abrirSolucion(evt, solution) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(solution).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </head>
 <body>
     <!-- Header del sitio -->
@@ -26,10 +41,10 @@
             </div>
 
             <ul class="open desktop">
-                <li class="active"><a href="soluciones.html"><i class="fa fa-database site-nav--icon"></i>SOLUCIONES</a></li>
+                <li class="active"><a href="soluciones.html"><i class="fa fa-cogs site-nav--icon"></i>SOLUCIONES</a></li>
                 <li><a href="soporte.html"><i class="fa fa-info-circle site-nav--icon"></i>SOPORTE</a></li>
-                <li><a href="clientes.html"><i class="fa fa-paper-plane site-nav--icon"></i>CLIENTES</a></li>
-                <li><a href="nosotros.html"><i class="fa fa-cloud-download site-nav--icon"></i>NOSOTROS</a></li>
+                <li><a href="clientes.html"><i class="fa fa-users site-nav--icon"></i>CLIENTES</a></li>
+                <li><a href="nosotros.html"><i class="fa fa-user site-nav--icon"></i>NOSOTROS</a></li>
                 <li class="li-vertical-divider"><div class="vertical-divider"></div></li>
                 <li class="correo-link"><a href="https://mbox.s425.sureserver.com/?domain=proinfo.com.mx&" target="_blank"><i class="fa fa-envelope site-nav--icon"></i>CORREO PROINFO</a></>
             </ul>
@@ -50,6 +65,217 @@
         <p>Somos una organizaci&oacuten 100&percnt; mexicana con m&aacute;s de 15 años de experiencia que busca generar valor al negocio
         de sus clientes a trav&eacute;s de un entendimiento adecuado de sus necesidades apoyado por un s&oacute;lido 
         conocimiento en tecnolog&iacute;as de la informaci&oacute;n.</p>
+        <div class="contenedor titulo">
+            <div class="bloque">
+                <h3>NUESTRAS SOLUCIONES</h3>
+                <img src="img/barra-con-circulos.png" alt="Imagen barra con círculos" class="barra-con-circulos">
+            </div>
+        </div>
+        <div class="soluciones">
+            <div class="tab">
+                <button class="tablinks active" onclick="abrirSolucion(event, 'Flowmon')">
+                    <img src="img/Flowmon_network.png" alt="Logotipo de Flowmon">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Niksun')">
+                    <img src="img/niksun.png" alt="Logotipo de Niksun">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Redshift')">
+                    <img src="img/RedShift_Networks.png" alt="Logotipo de Redshift">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Niagara')">
+                    <img src="img/niagara.png" alt="Logotipo de Niagara">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Siemplify')">
+                    <img src="img/siemplify.png" alt="Logotipo de Siemplify">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Binahai')">
+                    <img src="img/binahai.png" alt="Logotipo de Binahai">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+            </div>
+
+            <div id="Flowmon" class="tabcontent" style="display: block;">
+                <p><b class="bold">Flowmon Networks</b> proporciona las herramientas necesarias para administrar y 
+                proteger su red. A trav&eacute;s de su tecnolog&iacute;a los profesionales de TI se benefician de 
+                visibilidad absoluta del tr&aacute;fico de red y las aplicaciones as&iacute; como de hacer frente 
+                a las amenazas cibern&eacute;ticas actuales.
+                La soluci&oacute;n se basa en la captura de flujos (Netflow, Jflow, IPfix, etc..) por lo que es una 
+                soluci&oacute;n ligera con la opci&oacute;n de appliances (hw) o equipo virtual.</p>
+                <p class="subtitulo"><b class="bold">Flowmon Ads:</b></p>
+                <p>El sistema de detecci&oacute;n de anomal&iacute;as (ADS) de Flowmon es una eficaz herramienta de 
+                seguridad de red que proporciona a los ingenieros dominio sobre las amenazas actuales.</p>
+                <p>Mediante un sofisticado an&aacute;lisis de comportamiento de red, la inteligencia artificial avanzada 
+                basada en el aprendizaje autom&aacute;tico, observa y analiza permanentemente la comunicaci&oacute;n 
+                de datos buscando anomal&iacute;as y mostrando comportamientos sospechosos.
+                Gracias a esto, ADS elimina autom&aacute;ticamente los riesgos que pasan por alto soluciones 
+                tradicionales, como servidores de seguridad, IDS/IPS o software antivirus.</p>
+                
+                <p class="subtitulo"><b class="bold">FLOWMON DDoS DEFENDER</b></p>
+                <p>La soluci&oacute;n escalable frente a ataques DDoS, aprovecha las estad&iacute;sticas de los 
+                enrutadores o las sondas de red espec&iacute;ficas con un an&aacute;lisis avanzado del tr&aacute;fico 
+                de red en tiempo real para la detecci&oacute;n de ataques volum&eacute;tricos dirigidos a sistemas y 
+                aplicaciones HTTP/HTTPS. Proporciona el estado de la detecci&oacute;n de DDoS, informaci&oacute;n 
+                detallada de las caracter&iacute;sticas del ataque y una gama completa de m&eacute;todos para reducir 
+                con &eacute;xito sus riesgos.</p>
+
+                <p class="subtitulo"><b class="bold">FLOWMON APM</b></p>
+                <p>La soluci&oacute;n de supervisi&oacute;n del rendimiento de aplicaciones de Flowmon (APM) supervisa 
+                de forma proactiva las aplicaciones fundamentales de su empresa desde la perspectiva del usuario final 
+                para que siempre sepa c&oacute;mo se comportan. Sin agentes en los servidores ni cambios en la 
+                configuraci&oacute;n.</p>
+                <p>Con Flowmon APM puede iniciar la supervisi&oacute;n transparente de aplicaciones en cuesti&oacute;n de 
+                minutos. Conozca c&oacute;mo se comporta cada aplicaci&oacute;n para cada usuario en tiempo real con el 
+                an&aacute;lisis de los protocolos de aplicaci&oacute;n y la comunicaci&oacute;n entre la 
+                aplicaci&oacute;n y los servidores de base de datos.</p>
+            </div>
+
+            <div id="Niksun" class="tabcontent">
+                <p>La <b class="bold">soluci&oacute;n Niksun</b>, tiene como objetivo el monitoreo del comportamiento de las aplicaciones en 
+                la red, para dar a conocer a las diferentes personas de las &aacute;reas de Inform&aacute;tica, de 
+                comunicaciones y responsables de los servicios de negocio, el estado de las aplicaciones en la red de 
+                comunicaciones. El monitoreo es en tiempo real, esto permite mostrar gr&aacute;ficamente el estado de 
+                cada una de ellas, ya sean aplicaciones comerciales o desarrollos hechos por el cliente; permite conocer 
+                el tiempo de respuesta que obtiene el usuario final de cada aplicaci&oacute;n, as&iacute; como disparar 
+                alarmas por nivel de utilizaci&oacute;n de los diferentes segmentos de red y en caso de falla 
+                proporcionar la evidencia necesaria para hacer un diagn&oacute;stico y correcci&oacute;n en el menor 
+                tiempo posible para as&iacute; ahorrar el costo asociado a una falla o suspensi&oacute;n de un 
+                servicio.</p>
+                <p>Constituida por los siguientes 3 m&oacute;dulos:</p>
+                <p class="subtitulo"><b class="bold">NetVCR</b></p>
+                <p>Monitoreo en tiempo real del desempeño de la red, aplicaciones y servicio, pudiendo reconocer 
+                m&uacute;ltiples protocolos y aplicaciones por s&iacute; solo, clasific&aacute;ndolos, analizando y 
+                correlacionando para una r&aacute;pida localizaci&oacute;n de eventos en el desempeño de &eacute;stas.</p>
+                <p class="subtitulo"><b class="bold">NetDetector</b></p>
+                <p>Soluci&oacute;n de monitoreo de seguridad que integra IDS basado en firmas junto con detecci&oacute;n 
+                de anomal&iacute;as en base a estad&iacute;sticas, provee capacidad de realizar forencia profunda con 
+                reconstrucci&oacute;n de aplicaciones y decodificaci&oacute;n de paquetes.</p>
+                <p class="subtitulo"><b class="bold">NetVoice</b></p>
+                <p>Monitoreo del tr&aacute;fico Voip que ayuda a la detecci&oacute;n de fallas en los servicios de 
+                telefon&iacute;a SIP as&iacute; como calidad del servicio y audio de llamadas.</p>
+            </div>
+
+            <div id="Redshift" class="tabcontent">
+                <p>Su misi&oacute;n es ofrecer soluciones de seguridad para redes VoIP y detecci&oacute;n de fraudes 
+                as&iacute; como su mitigaci&oacute;n. Ofrecemos a los operadores, carriers y MSPs protecci&oacute;n en 
+                tiempo real y un r&aacute;pido troubleshooting. La soluci&oacute;n completa ofrece estad&iacute;sticas 
+                de sesiones activas y actualizaciones a las brechas de seguridad en VoIP, reduciendo el n&uacute;mero de 
+                incidentes de fraudes, ataques BotNet y evitando p&eacute;rdidas en los ingresos.</p>
+                <p>Dividida en dos m&oacute;dulos, &eacute;sta soluci&oacute;n se enfoca en los siguientes puntos:</p>
+                <p class="subtitulo"><b class="bold">Real-Time VoIP Analytics</b></p>
+                <ul>
+                    <li><p>Vigilancia de tr&aacute;fico VoIP positivo y negativo con capacidad de reporteo.</p></li>
+                    <li><p>Ofrecer registros e informes de seguridad de red centralizados para garantizar que la 
+                    infraestructura de producci&oacute;n de ingresos cr&iacute;ticos de CSP est&eacute; protegida 
+                    contra todas las amenazas SIP.</p></li>
+                    <li><p>An&aacute;lisis contextuales avanzados en las tres capas de VoIP / UC; Capa de red, capa 
+                    de aplicaci&oacute;n y capas de usuario (centrado en SIP / UC).</p></li>
+                    <li><p>Automatizaci&oacute;n de capacidades forenses y de soluci&oacute;n de 
+                    problemas / depuraci&oacute;n.</p></li>
+                    <li><p>Diagramas detallados de escalera de llamada SIP, c&oacute;digos de error, UA, sesiones 
+                    activas, grabaci&oacute;n de llamadas, etc.</p></li>
+                    <li><p>Identificaci&oacute;n en tiempo real de los principales servicios utilizados, &aacute;reas 
+                    de red SIP bajo estr&eacute;s, redes que muestran actividades sospechosas / an&oacute;malas, 
+                    etc.</p></li>
+                </ul>
+                <p class="subtitulo"><b class="bold">RedShift Networks Insightful VoIP Security Module</b></p>
+                <p>El UCTM de RedShift ayuda a los CSP a construir un modelo de arquitectura de seguridad de Defensa 
+                en profundidad (DID) en las redes de Core Telecom. UCTM ayuda a los CSP a detener ataques de SIP 
+                conocidos y desconocidos, evita futuros ataques de SIP y cubre de forma segura 12 categor&iacute;as 
+                desde la capa de red hasta el fuzzing de voz y las amenazas de la capa de aplicaciones UC.</p>
+                <ul>
+                    <li><p>Detecci&oacute;n y mitigaci&oacute;n autom&aacute;tica de Cyberprobes, Robocalls, DoS, 
+                    ataques de botnet y secuestro de registros.</p></li>
+                    <li><p>Explotaci&oacute;n de vulnerabilidades SIP conocidas y desconocidas contra dispositivos 
+                    VoIP bien conocidos - Puntos finales / IP PBX / Softswitches  Softclients / Aplicaciones, 
+                    etc.</p></li>
+                    <li><p>Una vista completa y correlacionada de la actividad de ataque.</p></li>
+                    <li><p>Inteligencia contra amenazas SIP / RTP global en tiempo real y actualizaciones 
+                    autom&aacute;ticas de listas negras.</p></li>
+                </ul>
+            </div>
+
+            <div id="Niagara" class="tabcontent">
+                <p><b class="bold">Niagara Networks</b> provee visibilidad de red de alto rendimiento y alta 
+                confiabilidad, , as&iacute; como soluciones de entrega de tr&aacute;fico para los proveedores con los 
+                servicios m&aacute;s demandantes y entornos empresariales. Nuestras soluciones son instaladas en las 
+                redes m&aacute;s destacadas, facilitando a visibilidad end-to-end e inteligencia de tr&aacute;fico 
+                accionable a trav&eacute;s de redes virtuales y f&iacute;sicas.</p>
+                <p>Niagara Networks transforma la capa est&aacute;ndar de visibilidad a una capa de adaptaci&oacute;n 
+                de seguridad y visibilidad mejorada, habilitando a las &aacute;reas de operaciones, seguridad y a 
+                equipos de IT en general a que administren sin problemas la seguridad, la gesti&oacute;n del 
+                rendimiento, la supervisi&oacute;n y otros servicios de red de datos de misi&oacute;n cr&iacute;tica.</p>
+                <p>La Capa de Visibilidad de Adaptaci&oacute;n se coloca en el borde estrat&eacute;gico de las redes 
+                centrales, centros de datos y sitios de agregaci&oacute;n remotos. Este posicionamiento 
+                estrat&eacute;gico de dicha capa de mediaci&oacute;n cr&iacute;tica permite que se puedan realizar 
+                ajustes y modificaciones del tr&aacute;fico dirigidos a cada dispositivo de seguridad o monitoreo 
+                requerido seg&uacute;n sea necesario mediante el bloqueo, filtrado, agregaci&oacute;n, 
+                replicaci&oacute;n, separaci&oacute;n, tunelizaci&oacute;n, equilibrio de carga inteligente basado en 
+                el flujo de paquetes y m&aacute;s...</p>
+                <p>La Capa de Visibilidad de Adaptaci&oacute;n utiliza FabricFlowTM de Niagara Networks, la cual es 
+                tecnolog&iacute;a de procesamiento distribuido en todas las velocidades de tr&aacute;fico hasta 
+                interfaces de 100G y arquitectura de conmutaci&oacute;n distribuida sin bloqueo.</p>
+                <p>Con los avances de Niagara Networks PacketronTM y el procesamiento distribuido FabricFlowTM altamente 
+                integrado, la soluci&oacute;n puede aplicar procesamiento de tr&aacute;fico como desduplicaci&oacute;n, 
+                metadatos NetFlow, corte de paquetes y flujo para descargar capacidades de procesamiento avanzadas en la 
+                capa de visibilidad.</p>
+                <p>Niagara NetworksTM proporciona todos los componentes b&aacute;sicos para una capa de adaptaci&oacuten 
+                de visibilidad avanzada a todas las velocidades de datos de hasta 100 Gb, incluidos los corredores de 
+                paquetes, los elementos de derivaci&oacute;n, los grifos de red y una capa de gesti&oacute;n 
+                unificada.</p>
+            </div>
+
+            <div id="Siemplify" class="tabcontent">
+                <p><b class="bold">Siemplify</b> es una plataforma de respuesta de incidentes y orquestaci&oacute;n de 
+                seguridad centralizada y diseñada para que toda la operaci&oacute;n de seguridad se administre, 
+                investigue y automatice desde una &uacute;nica estaci&oacute;n de trabajo.</p>
+                <p>Proporciona herramientas automatizadas personalizables para que los analistas investiguen los 
+                incidentes de seguridad en profundidad y para que los gerentes de SOC supervisen el estado de los casos 
+                individuales, as&iacute; como el rendimiento SOC de los analistas y en general.</p>
+                <p>Siemplify proporciona visibilidad y contexto sin precedentes en todo el ecosistema de seguridad, 
+                reduce las alertas hasta un 80%, aumenta significativamente la capacidad de carga de los analistas, 
+                agiliza la investigaci&oacute;n, transforma los datos de seguridad estad&iacute;sticos en inteligencia 
+                procesable y mejora dr&aacute;sticamente el retorno de la inversi&oacute;n.</p>
+                <p class="subtitulo"><b class="bold">Administraci&oacute;n de Casos</b></p>
+                <p>Siemplify conecta las herramientas dispares a trav&eacute;s de la huella de seguridad para 
+                convertirse en el n&uacute;cleo al servicio de las operaciones de seguridad. Las alertas se agrupan con 
+                indicadores de amenaza relacionados en casos priorizados.</p>
+                <p>Casos completamente contextualizados se alimentan a trav&eacute;s del motor de automatizaci&oacute;n 
+                o se presentan a los analistas para una r&aacute;pida clasificaci&oacute;n y gesti&oacute;n.</p>
+                <p class="subtitulo"><b class="bold">Investigaci&oacute;n</b></p>
+                <p>Siemplify proporciona una investigaci&oacute;n r&aacute;pida para todos los niveles de 
+                seguridad. Mediante la integraci&oacute;n de herramientas de seguridad dispares en toda la empresa, los 
+                analistas pueden investigar incidentes a trav&eacute;s de un panel de vidrio &uacute;nico, los analistas 
+                pueden ejecutar un an&aacute;lisis r&aacute;pido de la causa ra&iacute;z a la velocidad del rayo, 
+                pasando r&aacute;pidamente de la detecci&oacute;n de amenazas a la respuesta y la 
+                mitigaci&oacute;n.</p>
+                <p class="subtitulo"><b class="bold">Automatizaci&oacute;n de Resoluci&oacute;n de incidentes</b></p>
+                <p>El enfoque basado en el contexto de Siemplify para la orquestaci&oacuten y la automatizaci&oacute;n 
+                proporciona el equilibrio final entre la respuesta dirigida por la m&aacute;quina y la dirigida por el 
+                analista.</p>
+                <p class="bold"><b class="bold">Schedule Reports</b></p>
+                <p>Siemplify permite programar los reportes para que se ejecuten de manera peri&oacute;dica, y sean 
+                enviados de manera autom&aacute;tica a las personas requeridas.</p>
+            </div>
+
+            <div id="Binahai" class="tabcontent">
+                <p><b class="bold">Binah</b> es una soluci&oacute;n de escaneo de signos vitales de manera remota y 
+                sencilla desde cualquier smartphone.</p>
+                <p>La aplicaci&oacute;n opera en tiempo real usando la c&aacute;mara frontal de tu dispositivo sin 
+                necesidad de estar conectado a internet y sin tener que agregar alg&uacute;n otro dispositivo.</p>
+                <ul>
+                    <li><p>Ritmo cardiaco</p></li>
+                    <li><p>Desviaci&oacute;n est&aacute;ndar de la variaci&oacute;n de frecuencia cardiaca.</p></li>
+                    <li><p>Saturaci&oacute;n de Oxigeno</p></li>
+                    <li><p>Respiraciones por minuto</p></li>
+                    <li><p>Estr&eacute;s mental (Ayuda para el cumplimiento de la Nom 035)</p></li>
+                </ul>
+            </div>
+        </div>
     </main>
     <!-- Final de la seccion principal -->
     <!-- Seccion contactanos -->

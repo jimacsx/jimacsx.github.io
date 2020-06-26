@@ -103,11 +103,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #e0cb22;
+    color: #2a2353;
+    font-weight: 700;
 }
 
 nav .correo-link a {
     font-weight: 300;
+}
+nav .correo-link a:hover {
+    font-weight: 400;
 }
 
 .site-nav--icon {
@@ -137,7 +141,7 @@ nav .correo-link a {
     }
     nav li.active a {
         color: #2a2353;
-        font-weight: 700;
+        font-weight: 900;
     }
 
     nav li a {

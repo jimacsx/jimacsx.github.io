@@ -38,6 +38,7 @@ a:active,
 a:focus,
 a:before,
 a:after {
+    background: transparent;
     text-decoration: none;
     border: none;
 }
@@ -777,10 +778,9 @@ a:after {
     width: 300px;
 }
 .contenedor-soluciones {
-    height: 48vh;
-    min-height: 272px;
+    min-height: 480px;
     max-width: 744px;
-    margin: 10rem auto 6rem;
+    margin: 5rem auto 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -791,6 +791,92 @@ a:after {
 .contenedor-soluciones p {
     font-weight: 300;
 }
-.contenedor-soluciones p:first-child {
-    margin-top: 0;
+.contenedor-soluciones .titulo {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto;
+}
+.contenedor-soluciones .titulo .bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-soluciones .titulo .bloque h3 {
+    margin: 0;
+}
+.contenedor-soluciones .titulo .bloque .barra-con-circulos {
+    width: 360px;
+}
+.contenedor-soluciones .soluciones {
+    width: 100%;
+}
+/* Style the tab */
+.contenedor-soluciones .soluciones .tab {
+    overflow: hidden;
+}
+/* Style the buttons inside the tab */
+.contenedor-soluciones .soluciones .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.contenedor-soluciones .soluciones .tab button:hover {
+    /* background-color: #ddd; */
+}
+/* Create an active/current tablink class */
+.contenedor-soluciones .soluciones .tab button.active img {
+    filter: grayscale(0%);
+}
+/* Style the tab content */
+.contenedor-soluciones .soluciones .tabcontent {
+    display: none;
+    padding: 0;
+    border-top: none;
+    text-align: justify;
+}
+.contenedor-soluciones .soluciones .tabcontent .bold {
+    font-weight: 900;
+}
+.contenedor-soluciones .soluciones .tabcontent .subtitulo {
+    margin: 0;
+}
+.contenedor-soluciones .soluciones .tab .tablinks img {
+    filter: grayscale(100%);
+}
+.contenedor-soluciones .soluciones .tab .tablinks img:hover {
+    filter: grayscale(0%);
+}
+.contenedor-soluciones .soluciones .tab .tablinks .active-soluciones {
+    display: none;
+}
+@media (min-width: 768px) {
+    .contenedor-soluciones .soluciones {
+        display: flex;
+    }
+    .contenedor-soluciones .soluciones .tab {
+        width: 40%;
+    }
+    .contenedor-soluciones .soluciones .tab .tablinks {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 120px;
+    }
+    .contenedor-soluciones .soluciones .tab .tablinks img {
+        max-width: 200px;
+    }
+    .contenedor-soluciones .soluciones .tab .tablinks.active .active-soluciones {
+        display: block;
+    }
+    .contenedor-soluciones .soluciones .tabcontent {
+        width: 60%;
+        padding: 0 0 0 1em;
+    }
 }
