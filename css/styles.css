@@ -67,7 +67,8 @@ a:after {
     text-decoration: none;
     font-size: 1.4rem;
     padding: 0.5rem 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    line-height: 1.5;
     display: inline-block;
     text-align: center;
     border: none;
@@ -77,6 +78,7 @@ a:after {
 }
 @media (min-width: 768px) {
     .boton {
+        margin-top: 3rem;
         display: inline-block;
         flex: 0 0 auto;
     }
@@ -803,6 +805,7 @@ a:after {
     align-items: center;
 }
 .contenedor-soluciones .titulo .bloque h3 {
+    text-align: center;
     margin: 0;
 }
 .contenedor-soluciones .titulo .bloque .barra-con-circulos {
@@ -825,10 +828,6 @@ a:after {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-}
-/* Change background color of buttons on hover */
-.contenedor-soluciones .soluciones .tab button:hover {
-    /* background-color: #ddd; */
 }
 /* Create an active/current tablink class */
 .contenedor-soluciones .soluciones .tab button.active img {
@@ -877,6 +876,7 @@ a:after {
         max-width: 200px;
     }
     .contenedor-soluciones .soluciones .tab .tablinks.active .active-soluciones {
+        max-width: 50px;
         display: block;
     }
     .contenedor-soluciones .soluciones .tabcontent {

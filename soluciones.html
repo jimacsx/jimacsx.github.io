@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        function abrirSolucion(evt, solution) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(solution).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 </head>
 <body>
     <!-- Header del sitio -->
@@ -36,11 +19,11 @@
                 <img src="img/logo_proinfo_rgb.png" alt="Logotipo de Proinfo" class="logo-img">
             </a>
 
-            <div class="menu-toggle">
+            <div id="menu" class="menu-toggle">
               <div class="hamburger"></div>
             </div>
 
-            <ul class="open desktop">
+            <ul id="menuList" class="open desktop">
                 <li class="active"><a href="soluciones.html"><i class="fa fa-cogs site-nav--icon"></i>SOLUCIONES</a></li>
                 <li><a href="soporte.html"><i class="fa fa-info-circle site-nav--icon"></i>SOPORTE</a></li>
                 <li><a href="clientes.html"><i class="fa fa-users site-nav--icon"></i>CLIENTES</a></li>
@@ -65,6 +48,7 @@
         <p>Somos una organizaci&oacuten 100&percnt; mexicana con m&aacute;s de 15 años de experiencia que busca generar valor al negocio
         de sus clientes a trav&eacute;s de un entendimiento adecuado de sus necesidades apoyado por un s&oacute;lido 
         conocimiento en tecnolog&iacute;as de la informaci&oacute;n.</p>
+        <div id="scrollToHere" style="height: 30px;"></div>
         <div class="contenedor titulo">
             <div class="bloque">
                 <h3>NUESTRAS SOLUCIONES</h3>
@@ -73,16 +57,16 @@
         </div>
         <div class="soluciones">
             <div class="tab">
-                <button class="tablinks active" onclick="abrirSolucion(event, 'Flowmon')">
-                    <img src="img/Flowmon_network.png" alt="Logotipo de Flowmon">
-                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
-                </button>
-                <button class="tablinks" onclick="abrirSolucion(event, 'Niksun')">
+                <button class="tablinks active" onclick="abrirSolucion(event, 'Niksun')">
                     <img src="img/niksun.png" alt="Logotipo de Niksun">
                     <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
                 </button>
                 <button class="tablinks" onclick="abrirSolucion(event, 'Redshift')">
                     <img src="img/RedShift_Networks.png" alt="Logotipo de Redshift">
+                    <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
+                </button>
+                <button class="tablinks" onclick="abrirSolucion(event, 'Flowmon')">
+                    <img src="img/Flowmon_network.png" alt="Logotipo de Flowmon">
                     <img src="img/active_soluciones.png" alt="Icono de solucion activa" class="active-soluciones">
                 </button>
                 <button class="tablinks" onclick="abrirSolucion(event, 'Niagara')">
@@ -99,43 +83,8 @@
                 </button>
             </div>
 
-            <div id="Flowmon" class="tabcontent" style="display: block;">
-                <p><b class="bold">Flowmon Networks</b> proporciona las herramientas necesarias para administrar y 
-                proteger su red. A trav&eacute;s de su tecnolog&iacute;a los profesionales de TI se benefician de 
-                visibilidad absoluta del tr&aacute;fico de red y las aplicaciones as&iacute; como de hacer frente 
-                a las amenazas cibern&eacute;ticas actuales.
-                La soluci&oacute;n se basa en la captura de flujos (Netflow, Jflow, IPfix, etc..) por lo que es una 
-                soluci&oacute;n ligera con la opci&oacute;n de appliances (hw) o equipo virtual.</p>
-                <p class="subtitulo"><b class="bold">Flowmon Ads:</b></p>
-                <p>El sistema de detecci&oacute;n de anomal&iacute;as (ADS) de Flowmon es una eficaz herramienta de 
-                seguridad de red que proporciona a los ingenieros dominio sobre las amenazas actuales.</p>
-                <p>Mediante un sofisticado an&aacute;lisis de comportamiento de red, la inteligencia artificial avanzada 
-                basada en el aprendizaje autom&aacute;tico, observa y analiza permanentemente la comunicaci&oacute;n 
-                de datos buscando anomal&iacute;as y mostrando comportamientos sospechosos.
-                Gracias a esto, ADS elimina autom&aacute;ticamente los riesgos que pasan por alto soluciones 
-                tradicionales, como servidores de seguridad, IDS/IPS o software antivirus.</p>
-                
-                <p class="subtitulo"><b class="bold">FLOWMON DDoS DEFENDER</b></p>
-                <p>La soluci&oacute;n escalable frente a ataques DDoS, aprovecha las estad&iacute;sticas de los 
-                enrutadores o las sondas de red espec&iacute;ficas con un an&aacute;lisis avanzado del tr&aacute;fico 
-                de red en tiempo real para la detecci&oacute;n de ataques volum&eacute;tricos dirigidos a sistemas y 
-                aplicaciones HTTP/HTTPS. Proporciona el estado de la detecci&oacute;n de DDoS, informaci&oacute;n 
-                detallada de las caracter&iacute;sticas del ataque y una gama completa de m&eacute;todos para reducir 
-                con &eacute;xito sus riesgos.</p>
-
-                <p class="subtitulo"><b class="bold">FLOWMON APM</b></p>
-                <p>La soluci&oacute;n de supervisi&oacute;n del rendimiento de aplicaciones de Flowmon (APM) supervisa 
-                de forma proactiva las aplicaciones fundamentales de su empresa desde la perspectiva del usuario final 
-                para que siempre sepa c&oacute;mo se comportan. Sin agentes en los servidores ni cambios en la 
-                configuraci&oacute;n.</p>
-                <p>Con Flowmon APM puede iniciar la supervisi&oacute;n transparente de aplicaciones en cuesti&oacute;n de 
-                minutos. Conozca c&oacute;mo se comporta cada aplicaci&oacute;n para cada usuario en tiempo real con el 
-                an&aacute;lisis de los protocolos de aplicaci&oacute;n y la comunicaci&oacute;n entre la 
-                aplicaci&oacute;n y los servidores de base de datos.</p>
-            </div>
-
-            <div id="Niksun" class="tabcontent">
-                <p>La <b class="bold">soluci&oacute;n Niksun</b>, tiene como objetivo el monitoreo del comportamiento de las aplicaciones en 
+            <div id="Niksun" class="tabcontent" style="display: block;">
+                <p>La soluci&oacute;n  <b class="bold">Niksun</b>, tiene como objetivo el monitoreo del comportamiento de las aplicaciones en 
                 la red, para dar a conocer a las diferentes personas de las &aacute;reas de Inform&aacute;tica, de 
                 comunicaciones y responsables de los servicios de negocio, el estado de las aplicaciones en la red de 
                 comunicaciones. El monitoreo es en tiempo real, esto permite mostrar gr&aacute;ficamente el estado de 
@@ -197,6 +146,41 @@
                     <li><p>Inteligencia contra amenazas SIP / RTP global en tiempo real y actualizaciones 
                     autom&aacute;ticas de listas negras.</p></li>
                 </ul>
+            </div>
+
+            <div id="Flowmon" class="tabcontent">
+                <p><b class="bold">Flowmon Networks</b> proporciona las herramientas necesarias para administrar y 
+                proteger su red. A trav&eacute;s de su tecnolog&iacute;a los profesionales de TI se benefician de 
+                visibilidad absoluta del tr&aacute;fico de red y las aplicaciones as&iacute; como de hacer frente 
+                a las amenazas cibern&eacute;ticas actuales.
+                La soluci&oacute;n se basa en la captura de flujos (Netflow, Jflow, IPfix, etc..) por lo que es una 
+                soluci&oacute;n ligera con la opci&oacute;n de appliances (hw) o equipo virtual.</p>
+                <p class="subtitulo"><b class="bold">Flowmon Ads:</b></p>
+                <p>El sistema de detecci&oacute;n de anomal&iacute;as (ADS) de Flowmon es una eficaz herramienta de 
+                seguridad de red que proporciona a los ingenieros dominio sobre las amenazas actuales.</p>
+                <p>Mediante un sofisticado an&aacute;lisis de comportamiento de red, la inteligencia artificial avanzada 
+                basada en el aprendizaje autom&aacute;tico, observa y analiza permanentemente la comunicaci&oacute;n 
+                de datos buscando anomal&iacute;as y mostrando comportamientos sospechosos.
+                Gracias a esto, ADS elimina autom&aacute;ticamente los riesgos que pasan por alto soluciones 
+                tradicionales, como servidores de seguridad, IDS/IPS o software antivirus.</p>
+                
+                <p class="subtitulo"><b class="bold">Flowmon DDoS Defender</b></p>
+                <p>La soluci&oacute;n escalable frente a ataques DDoS, aprovecha las estad&iacute;sticas de los 
+                enrutadores o las sondas de red espec&iacute;ficas con un an&aacute;lisis avanzado del tr&aacute;fico 
+                de red en tiempo real para la detecci&oacute;n de ataques volum&eacute;tricos dirigidos a sistemas y 
+                aplicaciones HTTP/HTTPS. Proporciona el estado de la detecci&oacute;n de DDoS, informaci&oacute;n 
+                detallada de las caracter&iacute;sticas del ataque y una gama completa de m&eacute;todos para reducir 
+                con &eacute;xito sus riesgos.</p>
+
+                <p class="subtitulo"><b class="bold">Flowmon APM</b></p>
+                <p>La soluci&oacute;n de supervisi&oacute;n del rendimiento de aplicaciones de Flowmon (APM) supervisa 
+                de forma proactiva las aplicaciones fundamentales de su empresa desde la perspectiva del usuario final 
+                para que siempre sepa c&oacute;mo se comportan. Sin agentes en los servidores ni cambios en la 
+                configuraci&oacute;n.</p>
+                <p>Con Flowmon APM puede iniciar la supervisi&oacute;n transparente de aplicaciones en cuesti&oacute;n de 
+                minutos. Conozca c&oacute;mo se comporta cada aplicaci&oacute;n para cada usuario en tiempo real con el 
+                an&aacute;lisis de los protocolos de aplicaci&oacute;n y la comunicaci&oacute;n entre la 
+                aplicaci&oacute;n y los servidores de base de datos.</p>
             </div>
 
             <div id="Niagara" class="tabcontent">
@@ -306,5 +290,7 @@
         </div>
     </footer>
     <!-- Final del Footer del sitio -->
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>

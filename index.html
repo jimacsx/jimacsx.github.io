@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
 </head>
 <body>
     <!-- Header del sitio -->
@@ -21,11 +19,11 @@
                 <img src="img/logo_proinfo_rgb.png" alt="Logotipo de Proinfo" class="logo-img">
             </a>
 
-            <div class="menu-toggle">
+            <div id="menu" class="menu-toggle" onClick>
               <div class="hamburger"></div>
             </div>
 
-            <ul class="open desktop">
+            <ul id="menuList" class="open desktop">
                 <li><a href="soluciones.html"><i class="fa fa-cogs site-nav--icon"></i>SOLUCIONES</a></li>
                 <li><a href="soporte.html"><i class="fa fa-info-circle site-nav--icon"></i>SOPORTE</a></li>
                 <li><a href="clientes.html"><i class="fa fa-users site-nav--icon"></i>CLIENTES</a></li>
@@ -41,6 +39,9 @@
             de experiencia en el mercado. Nuestra misi&oacute;n es generar valor a nuestros 
             clientes a trav&eacute;s de un entendimiento adecuado de sus necesidades, 
             sustentado en un conocimiento s&oacute;lido en tecnolog&iacute;as de informaci&oacute;n.</p>
+            <div class="contenedor-boton">
+                <a href="nosotros.html" class="boton boton-verde">NOSOTROS</a>
+            </div>
             <!-- Icono flecha abajo -->    
             <a href="#soluciones" class="flecha"><i class="fa fa-arrow-circle-o-down fa-lg fa-3x icon" aria-hidden="true"></i></a>
         </div>
@@ -107,7 +108,7 @@
                     necesidades de nuestros clientes.</p>
                 </div>
                 <div class="contenedor-boton">
-                    <a href="clientes.html" class="boton boton-verde">SOY CLIENTE</a>
+                    <a href="soporte.html" class="boton boton-verde">SOY CLIENTE</a>
                 </div>
             </div>
         </>
@@ -222,5 +223,7 @@
         </div>
     </footer>
     <!-- Final del Footer del sitio -->
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
