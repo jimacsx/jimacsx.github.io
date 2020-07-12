@@ -40,6 +40,7 @@ a:before,
 a:after {
     background: transparent;
     text-decoration: none;
+    outline: none;
     border: none;
 }
 /** Utilidades **/
@@ -111,7 +112,7 @@ a:after {
     flex-direction: column;
 }
 .overlay {
-    opacity: 0.4;
+    opacity: 0.2;
     position: absolute;
     top: 0;
     right: 0;
@@ -191,7 +192,7 @@ a:after {
         flex-basis: calc(33.3% - 1rem);
     }
     .objetivo .objetivo-img {
-        width: 100px;
+        width: 80px;
     }
     .objetivo h4 {
         text-transform: uppercase;
@@ -619,7 +620,7 @@ a:after {
 /* Soporte al cliente **/
 .site-header.soporte {
     position: relative;
-    background-image: url(../img/soporte.jpg);
+    background-image: url(../img/mundo.jpg);
     background-position: center center;
     background-size: cover;
     height: 40vh;
@@ -683,7 +684,7 @@ a:after {
 /* Clientes **/
 .site-header.clientes {
     position: relative;
-    background-image: url(../img/nuestros-clientes.jpg);
+    background-image: url(../img/mundo.jpg);
     background-position: center center;
     background-size: cover;
     height: 40vh;
@@ -746,7 +747,7 @@ a:after {
 /* Clientes **/
 .site-header.soluciones {
     position: relative;
-    background-image: url(../img/soluciones.jpg);
+    background-image: url(../img/mundo.jpg);
     background-position: center center;
     background-size: cover;
     height: 40vh;
