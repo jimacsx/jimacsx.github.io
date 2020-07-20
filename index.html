@@ -3,228 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procesos de integraci&oacute;n inform&aacute;tica</title>
-    <meta property="og:image" content="/img/logo_proinfo_rgb_og.png">
-    <link rel="icon" href="/img/favicon_proinfo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <title>jimacsx</title>
+    <meta property="og:image" content="./img/logo-jimacsx-192x192.png">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="My website with React JS"
+    />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./img/logo-jimacsx-192x192.png" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Header del sitio -->
-    <header class="site-header inicio">
-        <!-- Barra de Navegación -->
-        <nav class="site-nav">
-            <a href="/" class="logo">
-                <img src="img/logo_proinfo_rgb.png" alt="Logotipo de Proinfo" class="logo-img">
-            </a>
-
-            <div id="menu" class="menu-toggle" onClick>
-              <div class="hamburger"></div>
+    <div class="app">
+        <header></header>
+        <div class="folder">
+            <div class="logo">
+                <img src="./img/logo.svg" class="logo-img" alt="logo" />
             </div>
-
-            <ul id="menuList" class="open desktop">
-                <li><a href="soluciones.html"><i class="fa fa-cogs site-nav--icon"></i>SOLUCIONES</a></li>
-                <li><a href="soporte.html"><i class="fa fa-info-circle site-nav--icon"></i>SOPORTE</a></li>
-                <li><a href="clientes.html"><i class="fa fa-users site-nav--icon"></i>CLIENTES</a></li>
-                <li><a href="nosotros.html"><i class="fa fa-user site-nav--icon"></i>NOSOTROS</a></li>
-                <li class="li-vertical-divider"><div class="vertical-divider"></div></li>
-                <li class="correo-link"><a href="https://mbox.s425.sureserver.com/?domain=proinfo.com.mx&" target="_blank"><i class="fa fa-envelope site-nav--icon"></i>CORREO PROINFO</a></>
-            </ul>
-        </nav>
-        <!-- Contenido del Header -->
-        <div class="contenedor contenido-header">
-            <h1>PROCESOS DE INTEGRACI&Oacute;N INFORM&Aacute;TICA</h1>
-            <p>Somos una organizaci&oacute;n 100&percnt; mexicana que cuenta con m&aacute;s de 15 años  
-            de experiencia en el mercado. Nuestra misi&oacute;n es generar valor a nuestros 
-            clientes a trav&eacute;s de un entendimiento adecuado de sus necesidades, 
-            sustentado en un conocimiento s&oacute;lido en tecnolog&iacute;as de informaci&oacute;n.</p>
-            <div class="contenedor-boton">
-                <a href="nosotros.html" class="boton boton-verde">NOSOTROS</a>
-            </div>
-            <!-- Icono flecha abajo -->    
-            <a href="#soluciones" class="flecha">
-                <img src="img/flecha.png" alt="Logotipo banorte">
-                <!-- <i class="fa fa-arrow-circle-o-down fa-lg fa-3x icon" aria-hidden="true"></i> -->
-            </a>
+            <p class="folder-title">Jimacsx</p>
         </div>
-        <!-- Overlay sobre el header -->
-        <div class="overlay"></div>
-    </header>
-    <!-- Final del Header del sitio -->
-    <!-- Seccion principal del sitio -->
-    <main class="contenedor seccion seccion-ofrecemos">
-        <div class="iconos-ofrecemos">
-            <div class="objetivo">
-                <img src="img/servicio.png" alt="Icono de servicio" class="objetivo-img">
-                <h4>SERVICIO</h4>
-            </div>
-            <div class="objetivo">
-                <img src="img/calidad.png" alt="Icono de calidad" class="objetivo-img">
-                <h4>CALIDAD</h4>
-            </div>
-            <div class="objetivo">
-                <img src="img/eficiencia.png" alt="Icono de eficiencia" class="objetivo-img">
-                <h4>EFICIENCIA</h4>
-            </div>
-            <div class="objetivo">
-                <img src="img/confianza.png" alt="Icono de confianza" class="objetivo-img">
-                <h4>CONFIANZA</h4>
-            </div>
-        </div>
-    </main>
-    <!-- Final de la seccion principal del sitio -->
-    <!-- Seccion soluciones -->
-    <section class="site-soluciones" id="soluciones">
-        <div class="contenedor contenedor-home-soluciones">
-            <div class="bloque-informacion-home">
-                <div class="arriba">
-                    <h2>SOLUCIONES</h2>
-                    <img src="img/barra.png" alt="Imagen barra con círculos">
-                </div>
-                <div class="abajo">
-                    <p>Somos una empresa integradora de</br>
-                    soluciones de TI, enfocada en</br>
-                    soluciones espec&iacuteficas.</p>
-                </div>
-                <div class="contenedor-boton">
-                    <a href="soluciones.html" class="boton boton-verde">VER SOLUCIONES</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Final de la seccion de soluciones -->
-    <!-- Seccion soporte al cliente -->
-    <section class="site-soporte">
-        <div class="contenedor contenedor-home-soporte">
-            <div class="bloque-informacion-home">
-                <div class="arriba">
-                    <h2>SOPORTE</br> AL CLIENTE</h2>
-                    <img src="img/barra.png" alt="Imagen barra con círculos">
-                </div>
-                <div class="abajo">
-                    <p>Soporte personalizado para las distintas</br>
-                    necesidades de nuestros clientes.</p>
-                </div>
-                <div class="contenedor-boton">
-                    <a href="soporte.html" class="boton boton-verde">SOY CLIENTE</a>
-                </div>
-            </div>
-        </>
-    </section>
-    <!-- Final de la seccion de soporte al cliente -->
-    <!-- Seccion nuestros clientes -->
-    <section class="site-nuestros-clientes">
-        <div class="contenedor contenedor-nuestros-clientes">
-            <div class="bloque-arriba">
-                <h2>ALGUNOS DE</br> <span class="bold">NUESTROS CLIENTES</span></h2>
-                <img src="img/barra.png" alt="Imagen barra con círculos" class="barra-con-circulos">
-            </div>
-            <div class="clientes">
-                <div class="cliente">
-                    <div class="walmart">
-                        <img src="img/walmart.png" alt="Logotipo walmart">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="totalplay">
-                        <img src="img/totalplay.png" alt="Logotipo totalplay">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="santander">
-                        <img src="img/santander.png" alt="Logotipo santander">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="money">
-                        <img src="img/money.png" alt="Logotipo grupo financiero money">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="inbursa">
-                        <img src="img/inbursa.png" alt="Logotipo inbursa">
-                    </div>
-                </div>
-            </div>
-            <div class="clientes">
-                <div class="cliente">
-                    <div class="sanborns">
-                        <img src="img/grupo-sanborns.png" alt="Logotipo grupo sanborns">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="izzi">
-                        <img src="img/izzi.png" alt="Logotipo izzi">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="moctezuma">
-                        <img src="img/moctezuma.png" alt="Logotipo cementos y concretos moctezuma">    
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="banorte">
-                        <img src="img/banorte.png" alt="Logotipo banorte">
-                    </div>
-                </div>
-            </div>
-            <div class="clientes">
-                <div class="cliente">
-                    <div class="pemex">
-                        <img src="img/pemex.png" alt="Logotipo pemex" width="140">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="infonavit">
-                        <img src="img/infonavit.png" alt="Logotipo infonavit" width="120">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="att">
-                        <img src="img/at&t.png" alt="Logotipo at&t" width="120">
-                    </div>
-                </div>
-                <div class="cliente">
-                    <div class="kionetworks">
-                        <img src="img/kionetworks.png" alt="Logotipo kio networks">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Final de la seccion de nuestros clientes -->
-    <!-- Seccion contactanos -->
-    <section class="site-contactanos">
-        <div class="contenedor">
-            <div class="bloque-arriba">
-                <h3>CONT&Aacute;CTANOS</h3>
-                <img src="img/barra.png" alt="Imagen barra con círculos" class="barra-con-circulos">
-            </div>
-            <div class="bloque-abajo">
-                <p>Para cualquier informaci&oacute;n o duda, cont&aacute;ctanos</p>
-                <p>en el n&uacute;mero <b class="bold">55.5033.41.33</b></p>
-                <p>o en el correo <b class="bold"><a href="mailto:atencionaclientes@proinfo.com.mx" class="correo-link">atencionaclientes@proinfo.com.mx</a></b></p>
-                <p>&iexcl;Estamos para apoyarte&excl;</p>
-            </div>
-        </div>
-    </section>
-    <!-- Final de seccion contactanos -->
-    <!-- Footer del sitio -->
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion-footer">
-                <a href="/" class="link-logo">
-                    <img src="img/proinfo_blanco.png" alt="Logotipo Proinfo footer">
-                </a>
-            </nav>
-            <p class="copyright"> <span class="simbolo">&copy2020</span> Procesos de Integraci&oacute;n Inform&aacute;tica S.A de C.V.</p>
-        </div>
-    </footer>
-    <!-- Final del Footer del sitio -->
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>
