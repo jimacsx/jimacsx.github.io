@@ -1,0 +1,34 @@
+@import '../../theme/';
+
+.navActive {
+  color: $color-secondary;
+  transition: all 0.3s ease-out;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 8px;
+  padding-left: 25px;
+  text-decoration: none;
+}
+
+.navLink {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 8px;
+  padding-left: 25px;
+  text-decoration: none;
+  color: $color-alt-primary;
+}
+
+.navLink:active {
+  color: $color-secondary;
+}
+
+.activeSection {
+  color: $color-secondary;
+}
+
+.inactiveSection {
+  color: $color-alt-primary;
+}

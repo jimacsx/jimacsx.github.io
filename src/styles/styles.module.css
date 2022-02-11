@@ -1,0 +1,14 @@
+.pageContainer {
+  display: block;
+  width: 85%;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.layoutContainer {
+  margin-bottom: 24px;
+}
+
+.layoutContainer .typography {
+  font-weight: 500;
+}

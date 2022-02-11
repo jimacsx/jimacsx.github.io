@@ -1,0 +1,8 @@
+.datetimeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datetimeContainer p {
+  margin: 0;
+}

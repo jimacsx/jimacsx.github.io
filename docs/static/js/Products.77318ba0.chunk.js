@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[326],{4537:function(t,n,e){e.r(n),e.d(n,{Products:function(){return r}});var a=e(1225),s=e(7015),o=e(184),r=function(){return(0,o.jsx)("div",{className:s.Z.pageContainer,children:(0,o.jsx)(a.h4,{title:"Productos"})})};n.default=r},7015:function(t,n){n.Z={pageContainer:"styles_pageContainer__3pi1V",layoutContainer:"styles_layoutContainer__EosnQ",typography:"styles_typography__CIIOj"}}}]);
+//# sourceMappingURL=Products.77318ba0.chunk.js.map

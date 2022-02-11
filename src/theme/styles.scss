@@ -1,0 +1,77 @@
+@import "./colors";
+@import "./variables";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 900;
+  src: $font-family-black-url;
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  src: $font-family-bold-url;
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  src: $font-family-light-url;
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  src: $font-family-medium-url;
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  src: $font-family-regular-url;
+}
+
+@font-face {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 100;
+  src: $font-family-thin-url;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  color: $color-alt-primary;
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  // font-size: 100%; /* 100% = 16px */
+  background-color: $color-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main-layout {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}

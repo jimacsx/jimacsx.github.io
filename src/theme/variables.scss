@@ -1,0 +1,30 @@
+// GLOBAL STYLE SETTINGS
+// -------------------->
+
+// FONT ------
+$font-family: 'Roboto';
+
+$font-family-black-url: url('../assets/fonts/Roboto-Black.ttf') format('truetype');
+$font-family-bold-url: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+$font-family-italic-url: url('../assets/fonts/Roboto-Italic.ttf') format('truetype');
+$font-family-light-url: url('../assets/fonts/Roboto-Light.ttf') format('truetype');
+$font-family-medium-url: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');
+$font-family-regular-url: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+$font-family-thin-url: url('../assets/fonts/Roboto-Thin.ttf') format('truetype');
+
+$font-size: 14px;
+
+// CONSTANTS ------
+$appBar-height: 72px;
+$drawer-width: 270px;
+$logo-width: 190px;
+$responsive-logo-width: 150px;
+
+// EXPORTS ------
+:export {
+  fontFamily: $font-family;
+  appBarHeight: $appBar-height;
+  drawerWidth: $drawer-width;
+  logoWidth: $logo-width;
+  responsiveLogoWidth: $responsive-logo-width;
+}

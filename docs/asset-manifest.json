@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a36da67.css",
+    "main.js": "/static/js/main.701f8c39.js",
+    "Customers.css": "/static/css/Customers.1bd5808e.chunk.css",
+    "Customers.js": "/static/js/Customers.fefb0a9f.chunk.js",
+    "Dashboard.js": "/static/js/Dashboard.67f8ce64.chunk.js",
+    "Products.css": "/static/css/Products.1bd5808e.chunk.css",
+    "Products.js": "/static/js/Products.77318ba0.chunk.js",
+    "Sales.css": "/static/css/Sales.1bd5808e.chunk.css",
+    "Sales.js": "/static/js/Sales.0eec0199.chunk.js",
+    "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
+    "static/js/616.ff2843fd.chunk.js": "/static/js/616.ff2843fd.chunk.js",
+    "static/js/2.3eb2c0cc.chunk.js": "/static/js/2.3eb2c0cc.chunk.js",
+    "static/media/logo.png": "/static/media/logo.0289a333b9f4f42b94aa.png",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.0fcd45fbfc419c42c8b9.ttf",
+    "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.2745c061dfc318ec57da.ttf",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
+    "static/media/Roboto-Black.ttf": "/static/media/Roboto-Black.988a1a31c4f20d1a34a9.ttf",
+    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.17451a4c1cd55e33ac57.ttf",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.ce61b8b68994802f2e55.ttf",
+    "index.html": "/index.html",
+    "main.5a36da67.css.map": "/static/css/main.5a36da67.css.map",
+    "main.701f8c39.js.map": "/static/js/main.701f8c39.js.map",
+    "Customers.1bd5808e.chunk.css.map": "/static/css/Customers.1bd5808e.chunk.css.map",
+    "Customers.fefb0a9f.chunk.js.map": "/static/js/Customers.fefb0a9f.chunk.js.map",
+    "Dashboard.67f8ce64.chunk.js.map": "/static/js/Dashboard.67f8ce64.chunk.js.map",
+    "Products.1bd5808e.chunk.css.map": "/static/css/Products.1bd5808e.chunk.css.map",
+    "Products.77318ba0.chunk.js.map": "/static/js/Products.77318ba0.chunk.js.map",
+    "Sales.1bd5808e.chunk.css.map": "/static/css/Sales.1bd5808e.chunk.css.map",
+    "Sales.0eec0199.chunk.js.map": "/static/js/Sales.0eec0199.chunk.js.map",
+    "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map",
+    "616.ff2843fd.chunk.js.map": "/static/js/616.ff2843fd.chunk.js.map",
+    "2.3eb2c0cc.chunk.js.map": "/static/js/2.3eb2c0cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a36da67.css",
+    "static/js/main.701f8c39.js"
+  ]
+}

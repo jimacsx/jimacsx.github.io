@@ -1,0 +1,240 @@
+// Application's Color Palette based on a triad, 2 harmonic colors and 1 constrasting (highlight) and a black/gray/white colors.
+
+//Primary Pallete --
+$color-primary: #1e212a;
+$color-secondary: #06bbe8;
+$color-highlight: #555555;
+// --------------------
+//Secondary Palette --
+$color-alt-primary: #03060b;
+$color-alt-secondary: #506176;
+$color-alt-highlight: #999999;
+// --------------------
+//Black/White Tones Palette
+$color-gray: #999;
+$color-black: #000;
+$color-white: #fff;
+// ---------------------
+//Complementary Palette --
+$color-complementary-1: #ff3399;
+$color-complementary-2: #fefe01;
+$color-complementary-3: #91e26c;
+$color-complementary-4: #ff0000;
+$color-complementary-5: #00ccff;
+$color-complementary-6: #ffa641;
+$color-hover: #00ccff12;
+// --------------------
+
+// Application's specific color context.
+$color-danger: $color-complementary-4;
+$color-success: $color-complementary-3;
+$color-warning: $color-complementary-6;
+$color-info: $color-primary;
+
+
+// Color shades/lights distances.
+$mix-percentage-dark: 80%;
+$mix-percentage-darker: 60%;
+$mix-percentage-darkest: 40%;
+$mix-percentage-darkest-s: 20%;
+$mix-percentage-light: 80%;
+$mix-percentage-lighter: 60%;
+$mix-percentage-lightest: 40%;
+$mix-percentage-lightest-s: 20%;
+
+// Glow colors alpha index.
+$mix-glow-alpha-index: .3;
+
+// END OF EDIT AREA ----------------
+
+// ---------------------------------
+// DO NOT EDIT FROM HERE ------>
+// ---------------------------------
+
+$color-primary-light: mix($color-primary, $color-white, $mix-percentage-light);
+$color-primary-lighter: mix($color-primary, $color-white, $mix-percentage-lighter);
+$color-primary-lightest: mix($color-primary, $color-white, $mix-percentage-lightest);
+$color-primary-lightest-s: mix($color-primary, $color-white, $mix-percentage-lightest-s);
+$color-primary-dark: mix($color-primary, $color-black, $mix-percentage-dark);
+$color-primary-darker: mix($color-primary, $color-black, $mix-percentage-darker);
+$color-primary-darkest: mix($color-primary, $color-black, $mix-percentage-darkest);
+$color-primary-darkest-s: mix($color-primary, $color-black, $mix-percentage-darkest-s);
+
+$color-secondary-light: mix($color-secondary, $color-white, $mix-percentage-light);
+$color-secondary-lighter: mix($color-secondary, $color-white, $mix-percentage-lighter);
+$color-secondary-lightest: mix($color-secondary, $color-white, $mix-percentage-lightest);
+$color-secondary-lightest-s: mix($color-secondary, $color-white, $mix-percentage-lightest-s);
+$color-secondary-dark: mix($color-secondary, $color-black, $mix-percentage-dark);
+$color-secondary-darker: mix($color-secondary, $color-black, $mix-percentage-darker);
+$color-secondary-darkest: mix($color-secondary, $color-black, $mix-percentage-darkest);
+$color-secondary-darkest-s: mix($color-secondary, $color-black, $mix-percentage-darkest-s);
+
+$color-highlight-light: mix($color-highlight, $color-white, $mix-percentage-light);
+$color-highlight-lighter: mix($color-highlight, $color-white, $mix-percentage-lighter);
+$color-highlight-lightest: mix($color-highlight, $color-white, $mix-percentage-lightest);
+$color-highlight-lightest-s: mix($color-highlight, $color-white, $mix-percentage-lightest-s);
+$color-highlight-dark: mix($color-highlight, $color-black, $mix-percentage-dark);
+$color-highlight-darker: mix($color-highlight, $color-black, $mix-percentage-darker);
+$color-highlight-darkest: mix($color-highlight, $color-black, $mix-percentage-darkest);
+$color-highlight-darkest-s: mix($color-highlight, $color-black, $mix-percentage-darkest-s);
+
+$color-alt-primary-light: mix($color-alt-primary, $color-white, $mix-percentage-light);
+$color-alt-primary-lighter: mix($color-alt-primary, $color-white, $mix-percentage-lighter);
+$color-alt-primary-lightest: mix($color-alt-primary, $color-white, $mix-percentage-lightest);
+$color-alt-primary-lightest-s: mix($color-alt-primary, $color-white, $mix-percentage-lightest-s);
+$color-alt-primary-dark: mix($color-alt-primary, $color-black, $mix-percentage-dark);
+$color-alt-primary-darker: mix($color-alt-primary, $color-black, $mix-percentage-darker);
+$color-alt-primary-darkest: mix($color-alt-primary, $color-black, $mix-percentage-darkest);
+$color-alt-primary-darkest-s: mix($color-alt-primary, $color-black, $mix-percentage-darkest-s);
+
+$color-alt-secondary-light: mix($color-alt-secondary, $color-white, $mix-percentage-light);
+$color-alt-secondary-lighter: mix($color-alt-secondary, $color-white, $mix-percentage-lighter);
+$color-alt-secondary-lightest: mix($color-alt-secondary, $color-white, $mix-percentage-lightest);
+$color-alt-secondary-lightest-s: mix($color-alt-secondary, $color-white, $mix-percentage-lightest-s);
+$color-alt-secondary-dark: mix($color-alt-secondary, $color-black, $mix-percentage-dark);
+$color-alt-secondary-darker: mix($color-alt-secondary, $color-black, $mix-percentage-darker);
+$color-alt-secondary-darkest: mix($color-alt-secondary, $color-black, $mix-percentage-darkest);
+$color-alt-secondary-darkest-s: mix($color-alt-secondary, $color-black, $mix-percentage-darkest-s);
+
+$color-alt-highlight-light: mix($color-alt-highlight, $color-white, $mix-percentage-light);
+$color-alt-highlight-lighter: mix($color-alt-highlight, $color-white, $mix-percentage-lighter);
+$color-alt-highlight-lightest: mix($color-alt-highlight, $color-white, $mix-percentage-lightest);
+$color-alt-highlight-lightest-s: mix($color-alt-highlight, $color-white, $mix-percentage-lightest-s);
+$color-alt-highlight-dark: mix($color-alt-highlight, $color-black, $mix-percentage-dark);
+$color-alt-highlight-darker: mix($color-alt-highlight, $color-black, $mix-percentage-darker);
+$color-alt-highlight-darkest: mix($color-alt-highlight, $color-black, $mix-percentage-darkest);
+$color-alt-highlight-darkest-s: mix($color-alt-highlight, $color-black, $mix-percentage-darkest-s);
+
+$color-gray-light: mix($color-gray, $color-white, $mix-percentage-light);
+$color-gray-lighter: mix($color-gray, $color-white, $mix-percentage-lighter);
+$color-gray-lightest: mix($color-gray, $color-white, $mix-percentage-lightest);
+$color-gray-lightest-s: mix($color-gray, $color-white, $mix-percentage-lightest-s);
+$color-gray-dark: mix($color-gray, $color-black, $mix-percentage-dark);
+$color-gray-darker: mix($color-gray, $color-black, $mix-percentage-darker);
+$color-gray-darkest: mix($color-gray, $color-black, $mix-percentage-darkest);
+$color-gray-darkest-s: mix($color-gray, $color-black, $mix-percentage-darkest-s);
+
+$color-danger-light: mix($color-danger, $color-white, $mix-percentage-light);
+$color-danger-lighter: mix($color-danger, $color-white, $mix-percentage-lighter);
+$color-danger-lightest: mix($color-danger, $color-white, $mix-percentage-lightest);
+$color-danger-dark: mix($color-danger, $color-black, $mix-percentage-dark);
+$color-danger-darker: mix($color-danger, $color-black, $mix-percentage-darker);
+$color-danger-darkest: mix($color-danger, $color-black, $mix-percentage-darkest);
+
+$color-success-light: mix($color-success, $color-white, $mix-percentage-light);
+$color-success-lighter: mix($color-success, $color-white, $mix-percentage-lighter);
+$color-success-lightest: mix($color-success, $color-white, $mix-percentage-lightest);
+$color-success-dark: mix($color-success, $color-black, $mix-percentage-dark);
+$color-success-darker: mix($color-success, $color-black, $mix-percentage-darker);
+$color-success-darkest: mix($color-success, $color-black, $mix-percentage-darkest);
+
+$color-warning-light: mix($color-warning, $color-white, $mix-percentage-light);
+$color-warning-lighter: mix($color-warning, $color-white, $mix-percentage-lighter);
+$color-warning-lightest: mix($color-warning, $color-white, $mix-percentage-lightest);
+$color-warning-lightest-s: mix($color-warning, $color-white, $mix-percentage-lightest-s);
+$color-warning-dark: mix($color-warning, $color-black, $mix-percentage-dark);
+$color-warning-darker: mix($color-warning, $color-black, $mix-percentage-darker);
+$color-warning-darkest: mix($color-warning, $color-black, $mix-percentage-darkest);
+
+$color-info-light: mix($color-info, $color-white, $mix-percentage-light);
+$color-info-lighter: mix($color-info, $color-white, $mix-percentage-lighter);
+$color-info-lightest: mix($color-info, $color-white, $mix-percentage-lightest);
+$color-info-dark: mix($color-info, $color-black, $mix-percentage-dark);
+$color-info-darker: mix($color-info, $color-black, $mix-percentage-darker);
+$color-info-darkest: mix($color-info, $color-black, $mix-percentage-darkest);
+
+:export {
+	colorBlack: $color-black;
+	colorWhite: $color-white;
+	colorPrimary: $color-primary;
+	colorPrimaryDark: $color-primary-dark;
+	colorPrimaryDarker: $color-primary-darker;
+	colorPrimaryDarkest: $color-primary-darkest;
+	colorPrimaryLight: $color-primary-light;
+	colorPrimaryLighter: $color-primary-lighter;
+	colorPrimaryLightest: $color-primary-lightest;
+	colorSecondary: $color-secondary;
+	colorSecondaryDark: $color-secondary-dark;
+	colorSecondaryDarker: $color-secondary-darker;
+	colorSecondaryDarkest: $color-secondary-darkest;
+	colorSecondaryLight: $color-secondary-light;
+	colorSecondaryLighter: $color-secondary-lighter;
+	colorSecondaryLightest: $color-secondary-lightest;
+	colorSecondaryLightestS: $color-secondary-lightest-s;
+	colorHighlight: $color-highlight;
+	colorHighlightDark: $color-highlight-dark;
+	colorHighlightDarker: $color-highlight-darker;
+	colorHighlightDarkest: $color-highlight-darkest;
+	colorHighlightLight: $color-highlight-light;
+	colorHighlightLighter: $color-highlight-lighter;
+	colorHighlightLightest: $color-highlight-lightest;
+	colorGray: $color-gray;
+	colorGrayDark: $color-gray-dark;
+	colorGrayDarker: $color-gray-darker;
+	colorGrayDarkest: $color-gray-darkest;
+	colorGrayLight: $color-gray-light;
+	colorGrayLighter: $color-gray-lighter;
+	colorGrayLightest: $color-gray-lightest;
+	colorGrayLightestS: $color-gray-lightest-s;
+	colorAltPrimary: $color-alt-primary;
+	colorAltPrimaryDark: $color-alt-primary-dark;
+	colorAltPrimaryDarker: $color-alt-primary-darker;
+	colorAltPrimaryDarkest: $color-alt-primary-darkest;
+	colorAltPrimaryDarkestS: $color-alt-primary-darkest-s;
+	colorAltPrimaryLight: $color-alt-primary-light;
+	colorAltPrimaryLighter: $color-alt-primary-lighter;
+	colorAltPrimaryLightest: $color-alt-primary-lightest;
+	colorAltPrimaryLightestS: $color-alt-primary-lightest-s;
+	colorAltSecondary: $color-alt-secondary;
+	colorAltSecondaryDark: $color-alt-secondary-dark;
+	colorAltSecondaryDarker: $color-alt-secondary-darker;
+	colorAltSecondaryDarkest: $color-alt-secondary-darkest;
+	colorAltSecondaryDarkestS: $color-alt-secondary-darkest-s;
+	colorAltSecondaryLight: $color-alt-secondary-light;
+	colorAltSecondaryLighter: $color-alt-secondary-lighter;
+	colorAltSecondaryLightest: $color-alt-secondary-lightest;
+	colorAltSecondaryLightestS: $color-alt-secondary-lightest-s;
+	colorAltHighlight: $color-alt-highlight;
+	colorAltHighlightDark: $color-alt-highlight-dark;
+	colorAltHighlightDarker: $color-alt-highlight-darker;
+	colorAltHighlightDarkest: $color-alt-highlight-darkest;
+	colorAltHighlightDarkestS: $color-alt-highlight-darkest-s;
+	colorAltHighlightLight: $color-alt-highlight-light;
+	colorAltHighlightLighter: $color-alt-highlight-lighter;
+	colorAltHighlightLightest: $color-alt-highlight-lightest;
+	colorAltHighlightLightestS: $color-alt-highlight-lightest-s;
+	colorSuccess: $color-success;
+	colorSuccessDark: $color-success-dark;
+	colorSuccessDarker: $color-success-darker;
+	colorSuccessDarkest: $color-success-darkest;
+	colorSuccessLight: $color-success-light;
+	colorSuccessLighter: $color-success-lighter;
+	colorSuccessLighest: $color-success-lightest;
+	colorDanger: $color-danger;
+	colorDangerDark: $color-danger-dark;
+	colorDangerDarker: $color-danger-darker;
+	colorDangerDarkest: $color-danger-darkest;
+	colorDangerLight: $color-danger-light;
+	colorDangerLighter: $color-danger-lighter;
+	colorDangerLighest: $color-danger-lightest;
+	colorWarning: $color-warning;
+	colorWarningDark: $color-warning-dark;
+	colorWarningDarker: $color-warning-darker;
+	colorWarningDarkest: $color-warning-darkest;
+	colorWarningLight: $color-warning-light;
+	colorWarningLighter: $color-warning-lighter;
+	colorWarningLighest: $color-warning-lightest;
+	colorInfo: $color-info;
+	colorInfoDark: $color-info-dark;
+	colorInfoDarker: $color-info-darker;
+	colorInfoDarkest: $color-info-darkest;
+	colorInfoLight: $color-info-light;
+	colorInfoLighter: $color-info-lighter;
+	colorInfoLighest: $color-info-lightest;
+	colorComplementary1: $color-complementary-1;
+	colorComplementary2: $color-complementary-2;
+	colorComplementary3: $color-complementary-3;
+  colorComplementary4: $color-complementary-4;
+	colorComplementary5: $color-complementary-5;
+  colorBgHover: $color-hover;
+}
