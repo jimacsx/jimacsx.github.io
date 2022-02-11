@@ -34,14 +34,14 @@ export const sections: Section[] = [
     icon: "dashboard", 
     routes: [
       {
-        path: "/dashboard/overview",
-        to: "/dashboard/overview",
+        path: "dashboard/overview/*",
+        to: "dashboard/overview/",
         Component: Dashboard,
         name: "Visión general",
       },
       {
-        path: "/dashboard/sales",
-        to: "/dashboard/sales",
+        path: "dashboard/sales/*",
+        to: "dashboard/sales",
         Component: Dashboard,
         name: "Ventas",
       }
@@ -52,25 +52,25 @@ export const sections: Section[] = [
     icon: "people", 
     routes: [
       {
-        path: "/customers/list",
-        to: "/customers/list",
+        path: "customers/list/*",
+        to: "customers/list",
         Component: Customers,
         name: "Lista",
       },
       {
-        path: "/customers/overview",
-        to: "/customers/overview",
+        path: "customers/overview/*",
+        to: "customers/overview",
         Component: Customers,
         name: "Resumen",
       },
       {
-        path: "/customers/orders",
-        to: "/customers/orders",
+        path: "customers/orders/*",
+        to: "customers/orders",
         Component: Customers,
         name: "Pedidos",
       }, {
-        path: "/customers/activity",
-        to: "/customers/activity",
+        path: "customers/activity/*",
+        to: "customers/activity",
         Component: Customers,
         name: "Actividad",
       }
@@ -81,14 +81,14 @@ export const sections: Section[] = [
     icon: "request_quote", 
     routes: [
       {
-        path: "/orders/list",
-        to: "/orders/list",
+        path: "orders/list/*",
+        to: "orders/list",
         Component: Sales,
         name: "Lista",
       },
       {
-        path: "/orders/overview",
-        to: "/orders/overview",
+        path: "orders/overview/*",
+        to: "orders/overview",
         Component: Sales,
         name: "Resumen",
       }
@@ -99,20 +99,20 @@ export const sections: Section[] = [
     icon: "shopping_cart", 
     routes: [
       {
-        path: "/products/list",
-        to: "/products/list",
+        path: "products/list/*",
+        to: "products/list",
         Component: Products,
         name: "Lista",
       },
       {
-        path: "/products/overview",
-        to: "/products/overview",
+        path: "products/overview/*",
+        to: "products/overview",
         Component: Products,
         name: "Resumen",
       },
       {
-        path: "/products/inventory",
-        to: "/products/inventory",
+        path: "products/inventory/*",
+        to: "products/inventory",
         Component: Products,
         name: "Inventario",
       }
