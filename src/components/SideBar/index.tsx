@@ -41,8 +41,6 @@ export const SideBar = () => {
     [location]
   );
 
-  console.log("location: ", location)
-
   return (
     <Drawer
       variant="permanent"
