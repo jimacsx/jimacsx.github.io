@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5a36da67.css",
-    "main.js": "/static/js/main.701f8c39.js",
+    "main.js": "/static/js/main.111ff83d.js",
     "Customers.css": "/static/css/Customers.1bd5808e.chunk.css",
     "Customers.js": "/static/js/Customers.fefb0a9f.chunk.js",
     "Dashboard.js": "/static/js/Dashboard.67f8ce64.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.ce61b8b68994802f2e55.ttf",
     "index.html": "/index.html",
     "main.5a36da67.css.map": "/static/css/main.5a36da67.css.map",
-    "main.701f8c39.js.map": "/static/js/main.701f8c39.js.map",
+    "main.111ff83d.js.map": "/static/js/main.111ff83d.js.map",
     "Customers.1bd5808e.chunk.css.map": "/static/css/Customers.1bd5808e.chunk.css.map",
     "Customers.fefb0a9f.chunk.js.map": "/static/js/Customers.fefb0a9f.chunk.js.map",
     "Dashboard.67f8ce64.chunk.js.map": "/static/js/Dashboard.67f8ce64.chunk.js.map",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.5a36da67.css",
-    "static/js/main.701f8c39.js"
+    "static/js/main.111ff83d.js"
   ]
 }
